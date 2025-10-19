@@ -1,4 +1,4 @@
-# First-Person-View-Glasses-for-Surgeons
+# First_Person_View_Glasses_for_Surgeons
 Lightweight Smart FPV Glasses powered by Edge ML on Arduino Nicla Vision. Implements a TinyML speech recognition model and real-time Wi-Fi video streaming for hands-free surgical assistance and remote visualization
 
 ---
@@ -14,7 +14,7 @@ This inspired the development of a **lightweight, affordable, and intelligent pa
 
 ## 🧠 Concept Overview
 
-The **FPV goggle system** is built into a regular spectacle frame form factor and is powered by **Arduino Nicla Vision**, an embedded board featuring:
+The **FPV glasses system** is built into a regular spectacle frame form factor and is powered by **Arduino Nicla Vision**, an embedded board featuring:
 
 - **STM32H747AII6 Dual ARM® Cortex® M7/M4**
 - **2 MP camera sensor**
@@ -36,7 +36,7 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 | **Power Source** | Rechargeable Li-Po or Power Bank |
 | **Battery Capacity Tested** | 500 mAh (3 hrs), 5000 mAh (10+ hrs) |
 | **Frame Material** | Lightweight spectacle frame with 3D printed battery mount |
-| **Controls** | Integrated slide switch for stream ON/OFF |
+| **Controls** | Integrated slide switch for stream ON/OFF (Before speech control) |
 
 ---
 
@@ -57,15 +57,15 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 |  Cortex-M7 (AI Core)| -----> | RPC Communication| -----> |  Cortex-M4 (Stream) |
 | Speech Recognition  |        |  Inter-core Msgs |        |  Video Control Logic |
 +---------------------+        +------------------+        +----------------------+
-                                      |
-                                      v
-                              +----------------+
-                              |  Wi-Fi Module  |
-                              |  (UDP/RTSP)    |
-                              +----------------+
-                                      |
-                                      v
-                            +-------------------+
-                            |   Web Client(s)   |
-                            |  Live Stream View |
-                            +-------------------+
+                                                                       |
+                                                                       v
+                                                              +----------------+
+                                                              |  Wi-Fi Module  |
+                                                              |  (UDP/RTSP)    |
+                                                              +----------------+
+                                                                       |
+                                                                       v
+                                                            +-------------------+
+                                                            |   Web Client(s)   |
+                                                            |  Live Stream View |
+                                                            +-------------------+
