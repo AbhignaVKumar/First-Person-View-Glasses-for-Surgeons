@@ -26,6 +26,27 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 ---
 
+## 🖼️ Preliminary Design
+
+<p align="center">
+  <img src="images/fpv_glasses_front.jpg" alt="FPV Smart Glasses Front View" width="500"/>
+  <br/>
+  <em>Figure 1: Early design prototype using Nicla Vision mounted on the nose bridge.</em>
+</p>
+
+<p align="center">
+  <img src="images/fpv_glasses_side.jpg" alt="FPV Smart Glasses Side View" width="500"/>
+  <br/>
+  <em>Figure 2: Side view showing compact integration of electronics and cable routing.</em>
+</p>
+
+<p align="center">
+  🎥 <b>Watch the video stream captured from the device:</b>  
+  <a href="videos/fpv_stream_demo.mp4">FPV Stream Demo Video</a>
+</p>
+
+---
+
 ## ⚙️ Hardware Architecture
 
 | Component | Description |
@@ -69,3 +90,25 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
                                                             |   Web Client(s)   |
                                                             |  Live Stream View |
                                                             +-------------------+
+
+---
+## 🔋 Battery Integration and Enhancements
+
+In the improved design, the **battery wiring is embedded** into the spectacle frame, ensuring comfort and aesthetics.  
+A **spring-loaded screw** allows the camera angle to be adjusted for each user, improving ergonomics and usability.  
+A **5000 mAh power bank** powers the system, enabling **10+ hours of continuous streaming**.  
+The slide switch integrated into the frame allows **manual pause/resume control**, complementing the TinyML voice commands.
+
+<p align="center">
+  <img src="images/fpv_battery_mount.jpg" alt="Battery Mount Integration" width="500"/>
+  <br/>
+  <em>Figure 3: Battery integrated into the frame using a 3D-printed holder.</em>
+</p>
+
+<p align="center">
+  <img src="images/fpv_final_design.jpg" alt="Final FPV Smart Glasses Design" width="500"/>
+  <br/>
+  <em>Figure 4: Final design prototype — fully integrated FPV smart glasses with Edge ML control.</em>
+</p>
+
+---
