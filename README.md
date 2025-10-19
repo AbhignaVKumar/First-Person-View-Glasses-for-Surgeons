@@ -71,27 +71,6 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 ---
 
-## 🧩 System Flow
-
-```text
-+---------------------+        +------------------+        +----------------------+
-|  Cortex-M7 (AI Core)| -----> | RPC Communication| -----> |  Cortex-M4 (Stream)  |
-| Speech Recognition  |        |  Inter-core Msgs |        |  Video Control Logic |
-+---------------------+        +------------------+        +----------------------+
-                                                                       |
-                                                                       v
-                                                              +----------------+
-                                                              |  Wi-Fi Module  |
-                                                              |  (UDP/RTSP)    |
-                                                              +----------------+
-                                                                       |
-                                                                       v
-                                                            +-------------------+
-                                                            |   Web Client(s)   |
-                                                            |  Live Stream View |
-                                                            +-------------------+
-
----
 ## 🔋 Battery Integration and Enhancements
 
 In the improved design, the **battery wiring is embedded** into the spectacle frame, ensuring comfort and aesthetics.  
@@ -112,3 +91,25 @@ The slide switch integrated into the frame allows **manual pause/resume control*
 </p>
 
 ---
+
+## 🧩 System Flow
+
+```text
++---------------------+        +------------------+        +----------------------+
+|  Cortex-M7 (AI Core)| -----> | RPC Communication| -----> |  Cortex-M4 (Stream)  |
+| Speech Recognition  |        |  Inter-core Msgs |        |  Video Control Logic |
++---------------------+        +------------------+        +----------------------+
+                                                                       |
+                                                                       v
+                                                              +----------------+
+                                                              |  Wi-Fi Module  |
+                                                              |  (UDP/RTSP)    |
+                                                              +----------------+
+                                                                       |
+                                                                       v
+                                                            +-------------------+
+                                                            |   Web Client(s)   |
+                                                            |  Live Stream View |
+                                                            +-------------------+
+
+
