@@ -8,7 +8,7 @@ Lightweight Smart FPV Glasses powered by Edge ML on Arduino Nicla Vision. Implem
 In February 2024, **Dr. Senthilvelan**, an arthroscopic surgeon specializing in shoulder, elbow, and wrist procedures, sought a solution to **record and stream live video** from the surgery room for **training and reference**.  
 Existing solutions were **bulky and expensive**, limiting accessibility in clinical setups.
 
-This inspired the development of a **lightweight, affordable, and intelligent pair of FPV (First Person View) goggles** that allow surgeons to stream and record live video from their own perspective, without interrupting their workflow.
+This inspired the development of a **lightweight, affordable, and intelligent pair of FPV (First Person View) glasses** that allow surgeons to stream and record live video from their own perspective, without interrupting their workflow.
 
 ---
 
@@ -20,7 +20,7 @@ The **FPV glasses system** is built into a regular spectacle frame form factor a
 - **2 MP camera sensor**
 - **Microphone**
 - **On-board Wi-Fi connectivity**
-- **Compact form factor (23 mm × 23 mm)** — fits seamlessly on the nose bridge
+- **Compact form factor (23 mm × 23 mm)** - fits seamlessly on the nose bridge
 
 This setup enables **real-time wireless video streaming** and **speech-controlled operation**, making it an effective hands-free solution for surgical environments.
 
@@ -63,7 +63,7 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 ## 💻 Software Design and Implementation
 
-- Developed firmware to **stream live video over Wi-Fi** using multiple protocol candidates — **UDP**, **HTTP**, and **RTSP**
+- Developed firmware to **stream live video over Wi-Fi** using multiple protocols like **UDP**, **HTTP**, and **RTSP**
 - Integrated **TinyML speech recognition model (71 KB)** on the **Cortex-M7** to identify `"resume"` and `"pause"` commands  
 - Commands are sent via **Remote Procedure Call (RPC)** to the **Cortex-M4**, which controls the camera stream accordingly
 - Achieved **37 ms inference time** for command recognition
@@ -73,7 +73,7 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 ## 🔋 Battery Integration and Enhancements
 
-In this design, the battery is seamlessly integrated into the spectacle frame and rests comfortably at the back of the head using a 3D-printed holder. A 5000 mAh power bank provides ample energy, is easily rechargeable via USB, and enables the FPV goggles to stream continuously for over 10 hours. An integrated slide switch allows users to turn the video streaming on and off(initial design, later with speech recognition), while a spring-loaded screw lets them adjust the camera angle for optimal comfort and viewing.
+In this design, the battery is seamlessly integrated into the spectacle frame and rests comfortably at the back of the head using a 3D-printed holder. A 5000 mAh power bank provides ample energy, is easily rechargeable via USB, and enables the FPV glasses to stream continuously for over 10 hours. An integrated slide switch allows users to turn the video streaming on and off(initial design, later with speech recognition), while a spring-loaded screw lets them adjust the camera angle for optimal comfort and viewing.
 
 <p align="center">
   <img src="images/fpv_battery_mount.jpg" alt="Battery Mount Integration" width="500"/>
