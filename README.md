@@ -54,7 +54,7 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 ```text
 +---------------------+        +------------------+        +----------------------+
-|  Cortex-M7 (AI Core)| -----> | RPC Communication| -----> |  Cortex-M4 (Stream) |
+|  Cortex-M7 (AI Core)| -----> | RPC Communication| -----> |  Cortex-M4 (Stream)  |
 | Speech Recognition  |        |  Inter-core Msgs |        |  Video Control Logic |
 +---------------------+        +------------------+        +----------------------+
                                                                        |
