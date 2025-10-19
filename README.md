@@ -8,7 +8,7 @@ Lightweight Smart FPV Glasses powered by Edge ML on Arduino Nicla Vision. Implem
 In February 2024, **Dr. Senthilvelan**, an arthroscopic surgeon specializing in shoulder, elbow, and wrist procedures, sought a solution to **record and stream live video** from the surgery room for **training and reference**.  
 Existing solutions were **bulky and expensive**, limiting accessibility in clinical setups.
 
-This inspired the development of a **lightweight, affordable, and intelligent pair of FPV (First Person View) goggles** that allow surgeons to stream and record live video from their own perspective — without interrupting their workflow.
+This inspired the development of a **lightweight, affordable, and intelligent pair of FPV (First Person View) goggles** that allow surgeons to stream and record live video from their own perspective, without interrupting their workflow.
 
 ---
 
@@ -73,10 +73,7 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 ## 🔋 Battery Integration and Enhancements
 
-In the improved design, the **battery wiring is embedded** into the spectacle frame, ensuring comfort and aesthetics.  
-A **spring-loaded screw** allows the camera angle to be adjusted for each user, improving ergonomics and usability.  
-A **5000 mAh power bank** powers the system, enabling **10+ hours of continuous streaming**.  
-The slide switch integrated into the frame allows **manual pause/resume control**, complementing the TinyML voice commands.
+In this design, the battery is seamlessly integrated into the spectacle frame and rests comfortably at the back of the head using a 3D-printed holder. A 5000 mAh power bank provides ample energy, is easily rechargeable via USB, and enables the FPV goggles to stream continuously for over 10 hours. An integrated slide switch allows users to turn the video streaming on and off(initial design, later with speech recognition), while a spring-loaded screw lets them adjust the camera angle for optimal comfort and viewing.
 
 <p align="center">
   <img src="images/fpv_battery_mount.jpg" alt="Battery Mount Integration" width="500"/>
