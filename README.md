@@ -28,19 +28,21 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 ## 🖼️ Preliminary Design
 
-<p align="center">
-  <img src="Images/design_specs_1.png" alt="FPV Smart Glasses Front View" width="300"/>
-  <br/>
-  <em>Figure 1: Early design prototype using Nicla Vision mounted on the nose bridge.</em>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="Images/design_specs_1.png" alt="FPV Smart Glasses Front View" width="300"/>
+      <br/>
+      <em>Figure 1: Early design prototype using Nicla Vision mounted on the nose bridge.</em>
+    </td>
+    <td align="center">
+      <img src="Images/design_specs_2.png" alt="FPV Smart Glasses Side View" width="300"/>
+      <br/>
+      <em>Figure 2: Side view showing compact integration of electronics and cable routing.</em>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="Images/design_specs_2.png" alt="FPV Smart Glasses Side View" width="300"/>
-  <br/>
-  <em>Figure 2: Side view showing compact integration of electronics and cable routing.</em>
-</p>
-
-[![Click to watch](Images/video_preview.gif)](Images/Nicla_video.mp4)
 
 ---
 
