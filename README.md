@@ -42,7 +42,7 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 <p align="center">
   🎥 <b>Watch the video stream captured from the device:</b>  
-  <a href="Images/Nicla_video.mp4">FPV Stream Demo Video</a>
+  [![Video Preview](Images/video_preview.gif)](Images/Nicla_video.mp4)
 </p>
 
 ---
