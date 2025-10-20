@@ -1,0 +1,50 @@
+#include <Streaming_Voice_recognition_1_inferencing.h>
+#include "RPC.h"
+
+short sampleBuffer[512]; // Declare sampleBuffer here
+
+void setup() {
+    Serial.begin(115200);
+    while (!Serial);
+    bootM4();
+
+    run_classifier_init();
+    RPC.begin();
+}
+
+void loop() {
+    if (RPC.available()) {
+        int bytesAvailable = RPC.peek(); // Check if data is available
+        if (bytesAvailable > 0) {
+            // Read each byte individually
+            for (int i = 0; i < bytesAvailable; i++) {
+                sampleBuffer[i] = RPC.read();
+            }
+
+            signal_t signal;
+            signal.total_length = bytesAvailable / 2; // 16-bit, 2 bytes per sample
+            signal.get_data = &get_audio_data;
+            ei_impulse_result_t result = {0};
+
+            EI_IMPULSE_ERROR r = run_classifier_continuous(&signal, &result, 0); // Change debug_nn to 0 or remove if not needed
+            if (r != EI_IMPULSE_OK) {
+                Serial.print("ERR: Failed to run classifier (");
+                Serial.print((int)r);
+                Serial.println(")");
+                return;
+            }
+
+            Serial.println("Predictions:");
+            for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
+                Serial.print(result.classification[ix].label);
+                Serial.print(": ");
+                Serial.println(result.classification[ix].value);
+            }
+        }
+    }
+}
+
+static int get_audio_data(size_t offset, size_t length, float *out_ptr) {
+    numpy::int16_to_float(&sampleBuffer[offset], out_ptr, length);
+    return 0;
+}
