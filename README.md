@@ -40,10 +40,7 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
   <em>Figure 2: Side view showing compact integration of electronics and cable routing.</em>
 </p>
 
-<video width="600" controls>
-  <source src="Images/Nicla_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Click to watch](Images/video_preview.gif)](Images/Nicla_video.mp4)
 
 ---
 
