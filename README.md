@@ -29,20 +29,20 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 ## 🖼️ Preliminary Design
 
 <p align="center">
-  <img src="images/design_specs_1.png" alt="FPV Smart Glasses Front View" width="500"/>
+  <img src="Images/design_specs_1.png" alt="FPV Smart Glasses Front View" width="500"/>
   <br/>
   <em>Figure 1: Early design prototype using Nicla Vision mounted on the nose bridge.</em>
 </p>
 
 <p align="center">
-  <img src="images/design_2.png" alt="FPV Smart Glasses Side View" width="500"/>
+  <img src="Images/design_specs_2.png" alt="FPV Smart Glasses Side View" width="500"/>
   <br/>
   <em>Figure 2: Side view showing compact integration of electronics and cable routing.</em>
 </p>
 
 <p align="center">
   🎥 <b>Watch the video stream captured from the device:</b>  
-  <a href="videos/Nicla_video.mp4">FPV Stream Demo Video</a>
+  <a href="Images/Nicla_video.mp4">FPV Stream Demo Video</a>
 </p>
 
 ---
@@ -76,13 +76,13 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 In this design, the battery is seamlessly integrated into the spectacle frame and rests comfortably at the back of the head using a 3D-printed holder. A 5000 mAh power bank provides ample energy, is easily rechargeable via USB, and enables the FPV glasses to stream continuously for over 10 hours. An integrated slide switch allows users to turn the video streaming on and off(initial design, later with speech recognition), while a spring-loaded screw lets them adjust the camera angle for optimal comfort and viewing.
 
 <p align="center">
-  <img src="images/battery_1.png" alt="Battery Mount Integration" width="500"/>
+  <img src="Images/battery_1.png" alt="Battery Mount Integration" width="500"/>
   <br/>
   <em>Figure 3: Battery integrated into the frame using a 3D-printed holder.</em>
 </p>
 
 <p align="center">
-  <img src="images/battery_2.png" alt="Final FPV Smart Glasses Design" width="500"/>
+  <img src="Images/battery_2.png" alt="Final FPV Smart Glasses Design" width="500"/>
   <br/>
   <em>Figure 4: Final design prototype — fully integrated FPV smart glasses with Edge ML control.</em>
 </p>
