@@ -74,17 +74,21 @@ This setup enables **real-time wireless video streaming** and **speech-controlle
 
 In this design, the battery is seamlessly integrated into the spectacle frame and rests comfortably at the back of the head using a 3D-printed holder. A 5000 mAh power bank provides ample energy, is easily rechargeable via USB, and enables the FPV glasses to stream continuously for over 10 hours. An integrated slide switch allows users to turn the video streaming on and off(initial design, later with speech recognition), while a spring-loaded screw lets them adjust the camera angle for optimal comfort and viewing.
 
-<p align="center">
-  <img src="Images/battery_1.png" alt="Battery Mount Integration" width="300"/>
-  <br/>
-  <em>Figure 3: Battery integrated into the frame using a 3D-printed holder.</em>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="Images/battery_1.png" alt="Battery Mount Integration" width="300"/>
+      <br/>
+      <em>Figure 3: Battery integrated into the frame using a 3D-printed holder.</em>
+    </td>
+    <td align="center">
+      <img src="Images/battery_2.png" alt="Final FPV Smart Glasses Design" width="300"/>
+      <br/>
+      <em>Figure 4: Final design prototype — fully integrated FPV smart glasses with Edge ML control.</em>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="Images/battery_2.png" alt="Final FPV Smart Glasses Design" width="300"/>
-  <br/>
-  <em>Figure 4: Final design prototype — fully integrated FPV smart glasses with Edge ML control.</em>
-</p>
 
 ---
 
